@@ -1,0 +1,21 @@
+{
+    "name": "QuickShop Delivery",
+    "short_name": "QuickShop",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f3f4f6",
+    "theme_color": "#4F46E5",
+    "icons": [
+        {
+            "src": "https://via.placeholder.com/192/4F46E5/FFFFFF?text=QS",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://via.placeholder.com/512/4F46E5/FFFFFF?text=QS",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
+
