@@ -1,5 +1,4 @@
-Coding 
-[7/30, 9:07 PM] Pandidurai: <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -332,35 +331,3 @@ Coding
     </script>
 </body>
 </html>
-[7/30, 9:08 PM] Pandidurai: {
-    "name": "QuickShop Delivery",
-    "short_name": "QuickShop",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#f3f4f6",
-    "theme_color": "#4F46E5",
-    "icons": [
-        {
-            "src": "https://via.placeholder.com/192/4F46E5/FFFFFF?text=QS",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "https://via.placeholder.com/512/4F46E5/FFFFFF?text=QS",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
-}
-[7/30, 9:09 PM] Pandidurai: const CACHE_NAME = 'quickshop-v1';
-const ASSETS = ['/', '/index.html', '/manifest.json'];
-
-self.addEventListener('install', e => {
-    e.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)));
-});
-
-self.addEventListener('fetch', e => {
-    e.respondWith(
-        caches.match(e.request).then(r => r || fetch(e.request))
-    );
-});
